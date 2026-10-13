@@ -1,30 +1,54 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Livin Digital · Apps by Shannon Garrison</title><style>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Livin Digital · Apps by Shannon Garrison</title>
+<style>
 :root{--bg:#0F1311;--card:#161C19;--text:#EDE8DC;--muted:#A7A89F;--gold:#C6A15B;--line:rgba(198,161,91,.35)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}
 main{max-width:760px;margin:0 auto;padding:48px 20px 80px}
 header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:28px}
 .eyebrow{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:12px;font-family:system-ui,sans-serif}
-h1{font-weight:600;font-size:40px;margin:6px 0 4px}h2{font-size:22px;margin:32px 0 8px;color:var(--gold)}
-nav a{color:var(--gold);text-decoration:none;font-family:system-ui,sans-serif;font-size:14px;margin-right:18px}
-p{margin:0 0 14px}footer{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:14px;font-family:system-ui,sans-serif}
+h1{font-weight:600;font-size:40px;margin:6px 0 4px}
+h2{font-size:22px;margin:32px 0 8px;color:var(--gold)}
+nav{display:flex;flex-wrap:wrap;gap:0 18px;margin-top:14px}
+nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--gold);text-decoration:none;font-family:system-ui,sans-serif;font-size:14px}
+p{margin:0 0 14px}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:14px;font-family:system-ui,sans-serif}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:14px 0}
 .card h3{margin:0 0 6px;font-size:18px;color:var(--gold);font-family:system-ui,sans-serif}
 .card p{margin:0;font-size:15px;color:var(--muted);font-family:system-ui,sans-serif}
 .badge{display:inline-block;font-size:11px;font-family:system-ui,sans-serif;padding:2px 8px;border-radius:20px;margin-top:6px;background:rgba(198,161,91,.15);color:var(--gold);border:1px solid rgba(198,161,91,.3)}
 a{color:var(--gold)}
-</style></head>
-<body><main>
+a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+</style>
+</head>
+<body>
+<main data-testid="studio-home-page">
 <header>
 <div class="eyebrow">Livin Digital</div>
 <h1>Our Apps</h1>
-<nav style="margin-top:14px"><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms of Use &amp; EULA</a></nav>
+<nav aria-label="Site navigation">
+<a data-testid="home-privacy-link" href="./privacy.html">Privacy Policy</a>
+<a data-testid="home-terms-link" href="./terms.html">Terms of Use &amp; EULA</a>
+</nav>
 </header>
 
 <p>Livin Digital is an independent app studio by Shannon Garrison, based in Hiawassee, GA. We build fun, relaxing, and useful apps for Android and iOS.</p>
 
 <h2>Games</h2>
+
+<div class="card" data-testid="alienz-game-card">
+<h3 data-testid="alienz-game-name">Alienz: Planetfall</h3>
+<p data-testid="alienz-game-description">A premium alien-survival idle RPG. Explore a continuous world, capture enemies with your tentacles, digest resources at your UFO, and evolve. Offline gameplay with local saves. One upfront purchase; no ads, subscriptions, or in-app purchases.</p>
+<span class="badge">Android · iOS</span>
+<nav aria-label="Alienz: Planetfall policies">
+<a data-testid="home-alienz-privacy-link" href="./alienz-planetfall-privacy.html">Privacy Policy</a>
+<a data-testid="home-alienz-eula-link" href="./alienz-planetfall-eula.html">EULA</a>
+</nav>
+</div>
 
 <div class="card">
 <h3>Relax Crosswords</h3>
@@ -53,7 +77,17 @@ a{color:var(--gold)}
 </div>
 
 <h2>Legal</h2>
-<p>Our <a href="./privacy.html">Privacy Policy</a> and <a href="./terms.html">Terms of Use &amp; EULA</a> apply to all Livin Digital apps.</p>
-<p>Support: <a href="mailto:livindigitalsupport@gmail.com">livindigitalsupport@gmail.com</a></p>
-<footer>Livin Digital · Shannon Garrison<br/>112 Titus Valley Rd, Hiawassee, GA 30546, USA<br/><a href="mailto:livindigitalsupport@gmail.com">livindigitalsupport@gmail.com</a></footer>
-</main></body></html>
+<p>Alienz: Planetfall has its own <a data-testid="home-legal-alienz-privacy-link" href="./alienz-planetfall-privacy.html">Privacy Policy</a> and <a data-testid="home-legal-alienz-eula-link" href="./alienz-planetfall-eula.html">End User License Agreement</a>.</p>
+
+<p>Our general <a data-testid="home-legal-privacy-link" href="./privacy.html">Privacy Policy</a> and <a data-testid="home-legal-terms-link" href="./terms.html">Terms of Use &amp; EULA</a> apply to Relax Crosswords, Word Search Bliss, Max Mana: Idle Clicker RPG, and QuickGig: Local Gigs &amp; Jobs.</p>
+
+<p>Support: <a data-testid="home-support-link" href="mailto:livindigitalsupport@gmail.com">livindigitalsupport@gmail.com</a></p>
+
+<footer>
+Livin Digital · Shannon Garrison<br/>
+112 Titus Valley Rd, Hiawassee, GA 30546, USA<br/>
+<a data-testid="home-footer-support-link" href="mailto:livindigitalsupport@gmail.com">livindigitalsupport@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>
