@@ -1,37 +1,64 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Privacy Policy · Livin Digital</title><style>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Privacy Policy · Livin Digital</title>
+<style>
 :root{--bg:#0F1311;--card:#161C19;--text:#EDE8DC;--muted:#A7A89F;--gold:#C6A15B;--line:rgba(198,161,91,.35)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}
 main{max-width:760px;margin:0 auto;padding:48px 20px 80px}
 header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:28px}
 .eyebrow{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:12px;font-family:system-ui,sans-serif}
-h1{font-weight:600;font-size:40px;margin:6px 0 4px}h2{font-size:22px;margin:32px 0 8px;color:var(--gold)}
+h1{font-weight:600;font-size:40px;margin:6px 0 4px}
+h2{font-size:22px;margin:32px 0 8px;color:var(--gold)}
 .updated{color:var(--muted);font-family:system-ui,sans-serif;font-size:14px}
-nav a{color:var(--gold);text-decoration:none;font-family:system-ui,sans-serif;font-size:14px;margin-right:18px}
-p{margin:0 0 14px}footer{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:14px;font-family:system-ui,sans-serif}
+nav{display:flex;flex-wrap:wrap;gap:0 18px;margin-top:14px}
+nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--gold);text-decoration:none;font-family:system-ui,sans-serif;font-size:14px}
+p{margin:0 0 14px}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:14px;font-family:system-ui,sans-serif}
+.notice{background:var(--card);border-left:3px solid var(--gold);padding:18px 20px;margin-bottom:24px}
 a{color:var(--gold)}
-</style></head>
-<body><main>
+a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+</style>
+</head>
+<body>
+<main data-testid="general-privacy-page">
 <header>
 <div class="eyebrow">Livin Digital</div>
 <h1>Privacy Policy</h1>
-<div class="updated">Last updated June 1, 2026</div>
-<nav style="margin-top:14px"><a href="./index.html">Home</a><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms of Use &amp; EULA</a></nav>
+<div class="updated">Last updated October 13, 2026</div>
+<nav aria-label="Site navigation">
+<a data-testid="general-privacy-home-link" href="./index.html">Home</a>
+<a data-testid="general-privacy-current-link" href="./privacy.html" aria-current="page">Privacy Policy</a>
+<a data-testid="general-privacy-terms-link" href="./terms.html">Terms of Use &amp; EULA</a>
+</nav>
 </header>
 
-<p>Livin Digital ("we", "us") is an independent app studio operated by Shannon Garrison. This Privacy Policy applies to all mobile applications published by Livin Digital, including <strong>Relax Crosswords</strong>, <strong>Word Search Bliss</strong>, <strong>Max Mana: Idle Clicker RPG</strong>, and <strong>QuickGig: Local Gigs &amp; Jobs</strong> (each, an "App"). By using any App you agree to this policy.</p>
+<aside class="notice" data-testid="general-privacy-alienz-notice">
+<strong>Looking for Alienz: Planetfall?</strong>
+It has a separate <a data-testid="general-privacy-alienz-link" href="./alienz-planetfall-privacy.html">Alienz: Planetfall Privacy Policy</a>. The advertising, account, location, AI, and general data-collection descriptions below do not apply to that Game; consult its own policy for its specific practices.
+</aside>
+
+<p>Livin Digital ("we", "us") is an independent app studio operated by Shannon Garrison. This Privacy Policy applies to the following mobile applications published by Livin Digital: <strong>Relax Crosswords</strong>, <strong>Word Search Bliss</strong>, <strong>Max Mana: Idle Clicker RPG</strong>, and <strong>QuickGig: Local Gigs &amp; Jobs</strong> (each, an "App"). By using any App you agree to this policy.</p>
 
 <h2>1. Information We Collect</h2>
 <p><strong>Account data:</strong> Most of our Apps do not require you to create an account. QuickGig may collect a display name, email address, and profile information you choose to provide in order to connect you with local gig opportunities.</p>
+
 <p><strong>Gameplay &amp; app data (games):</strong> For Relax Crosswords, Word Search Bliss, and Max Mana, your puzzle progress, scores, streaks, statistics and settings are stored locally on your device and are not uploaded to our servers.</p>
+
 <p><strong>Location data (QuickGig only):</strong> QuickGig requests approximate or precise location to show you gigs and jobs near you. Location is used only within the app and is not sold or shared with third parties except as described in Section 4.</p>
+
 <p><strong>AI puzzle themes (Relax Crosswords):</strong> If you use the "Create an AI puzzle" feature, the theme text you type is sent to our server and a third-party AI provider to generate a word list. Please do not enter personal information as a theme.</p>
+
 <p><strong>Device &amp; usage data:</strong> Our Apps and service providers may automatically receive technical information such as device type, operating system, language, approximate location derived from IP address, crash reports, and general usage statistics.</p>
 
 <h2>2. Advertising</h2>
 <p>Relax Crosswords, Word Search Bliss, and Max Mana: Idle Clicker RPG are free and supported by advertising served through Google AdMob. AdMob and its partners may collect and use your device's advertising identifier, IP address, and app-interaction data to show and measure ads, including interstitial ads and optional rewarded videos.</p>
+
 <p><strong>QuickGig does not display ads.</strong></p>
+
 <p>Where required by law you will be asked for consent before personalized ads are shown. You can limit ad tracking or reset your advertising identifier at any time in your device settings (iOS: Settings › Privacy › Tracking; Android: Settings › Google › Ads). Learn more at policies.google.com/technologies/partner-sites.</p>
 
 <h2>3. How We Use Information</h2>
@@ -56,6 +83,13 @@ a{color:var(--gold)}
 <p>We may update this policy from time to time. The "last updated" date at the top will change and, for material changes, we will provide notice within the relevant App.</p>
 
 <h2>10. Contact</h2>
-<p>Questions? Contact Shannon Garrison, Livin Digital, 112 Titus Valley Rd, Hiawassee, GA 30546, USA — <a href="mailto:livindigitalsupport@gmail.com">livindigitalsupport@gmail.com</a></p>
-<footer>Livin Digital · Shannon Garrison<br/>112 Titus Valley Rd, Hiawassee, GA 30546, USA<br/><a href="mailto:livindigitalsupport@gmail.com">livindigitalsupport@gmail.com</a></footer>
-</main></body></html>
+<p>Questions? Contact Shannon Garrison, Livin Digital, 112 Titus Valley Rd, Hiawassee, GA 30546, USA — <a data-testid="general-privacy-contact-link" href="mailto:livindigitalsupport@gmail.com">livindigitalsupport@gmail.com</a></p>
+
+<footer>
+Livin Digital · Shannon Garrison<br/>
+112 Titus Valley Rd, Hiawassee, GA 30546, USA<br/>
+<a data-testid="general-privacy-footer-link" href="mailto:livindigitalsupport@gmail.com">livindigitalsupport@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>
